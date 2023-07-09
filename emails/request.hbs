@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 100%; position: relative;">
+        <img src="https://www.pakcert.org/img/df-bootcamp.jpg" alt="Google" style="width: 100%;">
+        <div
+            style="position: absolute; font-weight: bold; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center;"
+        >
+            <p style="font-size: 1.5rem;" >FORENSIC PENTESTIC SYSTEM</p>
+            <p style="font-size: 1.125rem;">Solicitud</p>
+        </div>
+    </div>
+
+    <div style="font-size: 0.875rem; display: grid; grid-template-columns: 1fr; gap: 0.5rem; padding: 1rem;">
+        <label><span style="font-weight: bold;">Departamento:</span> {{departament}} </label>
+        <label><span style="font-weight: bold;">Fecha de solicitud:</span> {{date}} </label>
+        <label><span style="font-weight: bold;">Solicitante:</span> {{requestBy}} </label>
+
+        <label style="font-weight: bold; margin-top: 1.25rem;">Descripción del caso:</label>
+        <div style="font-size: 0.875rem; padding: 1.25rem;">
+            <p>{{caseDescription}}</p>
+        </div>
+
+        <label style="font-weight: bold;">Informacion de contacto:</label>
+        <div style="gap: 0.25rem; padding: 0.5rem; display: grid; grid-template-columns: 1fr 1fr;">
+            <label><span style="font-weight: bold;">Teléfono:</span> {{phoneNumber}} </label>
+            <label><span style="font-weight: bold;">Dirección:</span> {{address}} </label>
+            <label><span style="font-weight: bold;">Correo:</span> {{email}} </label>
+            <label><span style="font-weight: bold;">Cargo:</span> {{job}} </label>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
